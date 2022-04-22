@@ -1,0 +1,56 @@
+
+@font-face{
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-style: normal;
+    src: local('Quicksand'), url("/fonts/Quicksand-Medium.ttf"), format('truetype');
+}
+@font-face{
+    font-family: "Quicksand";
+    font-weight: 500;
+    font-style: normal;
+    src: local('Quicksand'), url("/fonts/Quicksand-Bold.ttf"), format('truetype');
+}
+@font-face{
+    font-family: "Quicksand";
+    font-weight: 500;
+    font-style: normal;
+    src: local('Quicksand'), url("/fonts/Quicksand-SemiBold.ttf"), format('truetype');
+}
+@font-face{
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-style: normal;
+    src: local('Quicksand'), url("/fonts/Quicksand-Regular.ttf"), format('truetype');
+}
+@font-face{
+    font-family: "Quicksand";
+    font-weight: 400;
+    font-style: normal;
+    src: local('Quicksand'), url("/fonts/Quicksand-Light.ttf"), format('truetype');
+}
+
+* {
+    font-family: Quicksand;
+}
+/* ----------- HEADER START ------------ */
+.box-content {
+    background-color: #f9f9f9;
+    border-radius: 68px;
+    width: 90vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+.logo-header {
+    width: 75px;
+}
+.content-header {
+    display: flex;
+}
+.content-header-item {
+    margin: auto;
+    color: #210060;
+}
+/* ----------- HEADER END ------------ */
