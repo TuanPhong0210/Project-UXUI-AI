@@ -1,56 +1,141 @@
+:root {
+    --primary-color: #d30d60;
+    --seconddary-color: #210060;
+    --complementary-color-1: #666666;
+    --complementary-color-2: #ffffff;
+}
 
-@font-face{
-    font-family: "Quicksand";
+@font-face {
+    font-family: 'Quicksand';
     font-weight: 400;
     font-style: normal;
-    src: local('Quicksand'), url("/fonts/Quicksand-Medium.ttf"), format('truetype');
+    src: local('Quicksand'), url("../fonts/Quicksand-Regular.ttf"), format('truetype');
 }
-@font-face{
-    font-family: "Quicksand";
+@font-face {
+    font-family: 'Quicksand';
     font-weight: 500;
     font-style: normal;
-    src: local('Quicksand'), url("/fonts/Quicksand-Bold.ttf"), format('truetype');
+    src: local('Quicksand'), url("../fonts/Quicksand-Bold.ttf"), format('truetype');
 }
-@font-face{
-    font-family: "Quicksand";
+@font-face {
+    font-family: 'Quicksand';
     font-weight: 500;
     font-style: normal;
-    src: local('Quicksand'), url("/fonts/Quicksand-SemiBold.ttf"), format('truetype');
+    src: local('Quicksand'), url("../fonts/Quicksand-SemiBold.ttf"), format('truetype');
 }
-@font-face{
-    font-family: "Quicksand";
+@font-face {
+    font-family: 'Quicksand';
     font-weight: 400;
     font-style: normal;
-    src: local('Quicksand'), url("/fonts/Quicksand-Regular.ttf"), format('truetype');
+    src: local('Quicksand'), url("../fonts/Quicksand-Medium.ttf"), format('truetype');
 }
-@font-face{
-    font-family: "Quicksand";
+@font-face {
+    font-family: 'Quicksand';
     font-weight: 400;
     font-style: normal;
-    src: local('Quicksand'), url("/fonts/Quicksand-Light.ttf"), format('truetype');
+    src: local('Quicksand'), url("../fonts/Quicksand-Light.ttf"), format('truetype');
 }
 
 * {
-    font-family: Quicksand;
+    font-family: 'Quicksand', sans-serif;
+}
+body {
+    background-image: url('/images/Group\ 89.png');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 /* ----------- HEADER START ------------ */
 .box-content {
     background-color: #f9f9f9;
     border-radius: 68px;
     width: 90vw;
-    margin: 20px auto;
+    margin: 50px auto;
     display: flex;
     justify-content: space-around;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .logo-header {
-    width: 75px;
+    width: 12vh;
 }
 .content-header {
     display: flex;
+    text-decoration: none;
 }
 .content-header-item {
     margin: auto;
-    color: #210060;
+    color: var(--seconddary-color);
 }
 /* ----------- HEADER END ------------ */
+
+
+/* ----------- BODY START ------------ */
+.content-body {
+    margin-top: 10vh;
+}
+.line {
+    height: 0px;
+    width: 20vh;
+    border-top: 1.5px solid var(--seconddary-color);
+    margin-top: 25px;
+}
+.intro-content {
+    display: flex;
+    margin: auto;
+    width: 85vw;
+    justify-content: space-between;
+}
+.image-intro-content {
+    width: 185px;
+    height: 185px;
+}
+.logo-intro-content {
+    width: 240.65px;
+    height: 87.56px;
+}
+.letter-intro-content{
+    width: 16vw;
+    line-height: 30px;
+    font-size: 24px;
+    padding: 10px;
+    word-break: normal;
+}
+
+.image-content-hind {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.our-services {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.our-services-title {
+    color: var(--seconddary-color);
+    font-size: 40px;
+    font-weight: 700;
+}
+.card {
+    border: 0px;
+}
+.card-img-top {
+    border: 2px solid var(--seconddary-color);
+}
+.card-body {
+    padding: 10px 0;
+}
+.card-text {
+    line-height: 2.8vh;
+    color: var(--seconddary-color);
+    text-align: justify;
+}
+/* ----------- BODY END ------------ */
+
+@media only screen and (min-width: 1805px) {
+    .line {
+        width: 25%;
+    }
+}
