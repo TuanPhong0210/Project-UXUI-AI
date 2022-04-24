@@ -64,19 +64,23 @@ html {
 
 .logo-header {
     width: 12vh;
+    transition: all .3s ease;
 }
-
+.logo-header:hover {
+    transform: scale(1.1);
+}
 .content-header {
     display: flex;
     text-decoration: none;
 }
-
 .content-header-item {
     margin: auto;
     color: var(--seconddary-color);
+    transition: all .3s ease;
 }
-
-
+.content-header-item:hover {
+    transform: scale(1.05);
+}
 /* ----------- HEADER END ------------ */
 
 
@@ -158,7 +162,6 @@ html {
 .services-content-title {
     text-align: center;
     font-size: 8vh;
-    line-height: 60px;
     font-weight: 700;
     color: var(--seconddary-color);
     padding: 0 0 10vh 0;
@@ -221,10 +224,6 @@ html {
 /* ----------- SECTION MANAGEMENT START ------------ */
 
 .manager-content {
-    background-image: url('../images/Group (1).png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     margin-top: 170vh;
 }
 
