@@ -47,6 +47,10 @@
 
 /* ----------- HEADER START ------------ */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .box-content {
     background-color: #f9f9f9;
     border-radius: 30px;
