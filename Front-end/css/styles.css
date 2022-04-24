@@ -11,24 +11,28 @@
     font-style: normal;
     src: local('Quicksand'), url("../fonts/Quicksand-Regular.ttf"), format('truetype');
 }
+
 @font-face {
     font-family: 'Quicksand';
     font-weight: 500;
     font-style: normal;
     src: local('Quicksand'), url("../fonts/Quicksand-Bold.ttf"), format('truetype');
 }
+
 @font-face {
     font-family: 'Quicksand';
     font-weight: 500;
     font-style: normal;
     src: local('Quicksand'), url("../fonts/Quicksand-SemiBold.ttf"), format('truetype');
 }
+
 @font-face {
     font-family: 'Quicksand';
     font-weight: 400;
     font-style: normal;
     src: local('Quicksand'), url("../fonts/Quicksand-Medium.ttf"), format('truetype');
 }
+
 @font-face {
     font-family: 'Quicksand';
     font-weight: 400;
@@ -40,10 +44,12 @@
     font-family: 'Quicksand', sans-serif;
 }
 
+
 /* ----------- HEADER START ------------ */
+
 .box-content {
     background-color: #f9f9f9;
-    border-radius: 68px;
+    border-radius: 30px;
     width: 90%;
     margin: 50px auto;
     display: flex;
@@ -51,31 +57,41 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
     display: none;
 }
+
 .logo-header {
     width: 12vh;
 }
+
 .content-header {
     display: flex;
     text-decoration: none;
 }
+
 .content-header-item {
     margin: auto;
     color: var(--seconddary-color);
 }
+
+
 /* ----------- HEADER END ------------ */
 
 
 /* ----------- BODY START ------------ */
+
 .content-body {
     margin-top: 10vh;
 }
+
 .line {
     height: 0px;
     width: 20vh;
     border-top: 1.5px solid var(--seconddary-color);
     margin-top: 25px;
 }
+
+
 /* ----------- SECTION INTRO START ------------ */
+
 .intro-content {
     margin: auto;
     height: 200vh;
@@ -87,23 +103,28 @@
     background-size: cover;
     position: relative;
 }
+
 .intro-content-row {
     display: flex;
     align-items: flex-end;
     height: 170vh;
     margin-left: 130px;
 }
+
 .intro-content-colume {
     align-items: flex-end;
 }
+
 .intro-content-card {
     display: flex;
     margin: 5vh;
 }
+
 .image-intro-content {
     width: 150px;
     height: 150px;
 }
+
 .letter-intro-content {
     font-size: 24px;
     line-height: 30px;
@@ -116,9 +137,11 @@
     display: flex;
     padding: 15vh 0;
 }
+
 .logo-section-item {
     margin: auto;
 }
+
 .services-content-title {
     text-align: center;
     font-size: 8vh;
@@ -127,6 +150,7 @@
     color: var(--seconddary-color);
     padding: 0 0 10vh 0;
 }
+
 .services-content-box {
     display: flex;
     margin: auto;
@@ -139,7 +163,8 @@
     margin: 20px;
     width: 33.3%;
 }
-.services-content-btn{
+
+.services-content-btn {
     position: absolute;
     color: #ffffff;
     background-color: var(--seconddary-color);
@@ -150,11 +175,13 @@
     bottom: 20vh;
     left: 2px;
 }
+
 .services-content-btn:hover {
     background-color: #ffffff;
     color: var(--seconddary-color);
     border: 2px solid var(--seconddary-color);
 }
+
 .btn:focus {
     box-shadow: 0 1px 4px 0.2px rgb(44 38 96 / 45%);
 }
@@ -162,20 +189,26 @@
 .services-content-card-body {
     padding: 10px 0;
 }
+
 .services-content-card-text {
     line-height: 2.8vh;
     color: var(--seconddary-color);
     text-align: justify;
 }
+
+
 /* ----------- SECTION INTRO END ------------ */
 
+
 /* ----------- SECTION MANAGEMENT START ------------ */
+
 .manager-content {
     background-image: url('../images/Group (1).png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .management-content {
     display: flex;
     width: 90%;
@@ -188,11 +221,13 @@
     font-weight: 700;
     color: var(--seconddary-color);
 }
+
 .content-text {
     font-size: 2.8vh;
     line-height: 3.2vh;
     color: var(--seconddary-color);
 }
+
 .content-btn {
     font-size: 2.8vh;
     font-weight: 600;
@@ -201,9 +236,13 @@
     border-radius: 118px;
     padding: 3vh 9vh;
 }
+
+
 /* ----------- SECTION MANAGEMENT END ------------ */
 
+
 /* ----------- SECTION ABOUT START ------------ */
+
 .about-description {
     background-image: url('../images/Group 118.png');
     background-repeat: no-repeat;
@@ -212,12 +251,14 @@
     height: 150vh;
     position: relative;
 }
+
 .about-workforce {
     position: absolute;
     left: 13%;
     top: 2%;
     width: 30%;
 }
+
 .about-people {
     position: absolute;
     left: 67%;
@@ -226,49 +267,62 @@
     text-align: justify;
 }
 
+
 /* ----------- SECTION ABOUT END ------------ */
 
+
 /* ----------- SECTION CONTACT START ------------ */
+
 .contact-content-description {
     background-image: url('../images/Frame 4.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
 }
+
 .contact-content-img {
     width: 35%;
     margin: 0 auto 50vh auto;
     padding-left: 5%;
     padding-right: -5%;
 }
+
+
 /* ----------- SECTION CONTACT END ------------ */
 
+
 /* ----------- SECTION PROJECT START ------------ */
+
 .project-description {
     display: flex;
     width: 90%;
     margin: auto;
 }
+
 .project-card {
     display: flex;
     width: 50%;
 }
+
 .project-img {
     height: 100px;
     aspect-ratio: 1/1;
     margin: 0 50px;
 }
+
 .project-text {
     color: var(--seconddary-color);
     font-size: 20px;
     line-height: 25px;
 }
+
 .project-parameter {
     display: flex;
     width: 80%;
     justify-content: space-between;
     margin: 15vh auto;
 }
+
 .project-para-number {
     color: #6DE0F6;
     font-size: 64px;
@@ -277,20 +331,28 @@
     justify-content: center;
     display: flex;
 }
+
 .project-para-text {
     color: var(--seconddary-color);
     font-size: 24px;
     justify-content: center;
     display: flex;
 }
+
+
 /* ----------- SECTION PROJECT END ------------ */
 
+
 /* ----------- SECTION CONTACT US START ------------ */
+
 .contact-us {
     display: flex;
     margin: 5vh 0;
 }
+
+
 /* ----------- SECTION CONTACT US START ------------ */
+
 
 /* ----------- BODY END ------------ */
 
@@ -320,6 +382,7 @@
         line-height: 3vh;
     }
 }
+
 @media only screen and (max-width: 1000px) {
     .intro-content-row {
         height: 150vh;
@@ -358,6 +421,7 @@
         width: 80%;
     }
 }
+
 @media only screen and (max-width: 800px) {
     .services-content-btn {
         font-size: 2vh;
@@ -365,8 +429,8 @@
     .intro-content-row {
         height: 120vh;
     }
-    
 }
+
 @media only screen and (max-width: 600px) {
     .services-content-box {
         flex-direction: column;
