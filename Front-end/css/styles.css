@@ -56,6 +56,7 @@
     display: flex;
     justify-content: space-around;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+    display: none;
 }
 .logo-header {
     width: 12vh;
@@ -295,9 +296,12 @@
 
 /* ----------- BODY END ------------ */
 
-@media only screen and (min-width: 1805px) {
-    /* .line {
-        width: 25%;
-    } */
+@media only screen and (min-width: 990px) {
+    .navbar {
+        display: none;
+    }
+    .box-content {
+        display: flex;
+    }
 }
 
