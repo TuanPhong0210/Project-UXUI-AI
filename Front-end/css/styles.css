@@ -89,7 +89,7 @@
     width: 100%;
     justify-content: space-between;
     background-image: url('/images/Group\ 115.png');
-    background-position: center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -101,12 +101,11 @@
     margin-left: 130px;
 }
 .intro-content-colume {
-    /* display: flex; */
     align-items: flex-end;
 }
 .intro-content-card {
     display: flex;
-    margin: 60px;
+    margin: 5vh;
 }
 .image-intro-content {
     width: 150px;
@@ -129,7 +128,7 @@
 }
 .services-content-title {
     text-align: center;
-    font-size: 48px;
+    font-size: 8vh;
     line-height: 60px;
     font-weight: 700;
     color: var(--seconddary-color);
@@ -145,6 +144,7 @@
     border: 0px;
     position: relative;
     margin: 20px;
+    width: 33.3%;
 }
 .services-content-btn{
     position: absolute;
@@ -152,9 +152,9 @@
     background-color: var(--seconddary-color);
     border: 2px solid var(--seconddary-color);
     border-radius: 0 10px 10px 0;
-    font-size: 24px;
+    font-size: 3vh;
     font-weight: 500;
-    bottom: 120px;
+    bottom: 20vh;
     left: 2px;
 }
 .services-content-btn:hover {
@@ -190,23 +190,23 @@
 }
 
 .content-title {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 7vh;
+    line-height: 7vh;
     font-weight: 700;
     color: var(--seconddary-color);
 }
 .content-text {
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 2.8vh;
+    line-height: 3.2vh;
     color: var(--seconddary-color);
 }
 .content-btn {
-    font-size: 20px;
+    font-size: 2.8vh;
     font-weight: 600;
     color: #ffffff;
     background: linear-gradient(93.04deg, #D30D60 -8.18%, #2C2660 104.83%);
     border-radius: 118px;
-    padding: 20px 80px;
+    padding: 3vh 9vh;
 }
 /* ----------- SECTION MANAGEMENT END ------------ */
 
@@ -214,7 +214,7 @@
 .about-description {
     background-image: url('/images/Group\ 118.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
     display: flex;
     height: 150vh;
     position: relative;
@@ -262,6 +262,7 @@
 }
 .project-img {
     height: 100px;
+    aspect-ratio: 1/1;
     margin: 0 50px;
 }
 .project-text {
@@ -280,10 +281,14 @@
     font-size: 64px;
     line-height: 80px;
     font-weight: 700;
+    justify-content: center;
+    display: flex;
 }
 .project-para-text {
     color: var(--seconddary-color);
     font-size: 24px;
+    justify-content: center;
+    display: flex;
 }
 /* ----------- SECTION PROJECT END ------------ */
 
@@ -305,3 +310,93 @@
     }
 }
 
+@media only screen and (max-width: 1366px) {
+    .content-body {
+        margin-top: 0;
+    }
+    .intro-content {
+        background-position: center top;
+        background-size: 100% auto;
+    }
+    .image-intro-content {
+        width: 8vw;
+        height: 8vw;
+    }
+    .letter-intro-content {
+        font-size: 3vh;
+        line-height: 3vh;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .intro-content-row {
+        height: 150vh;
+    }
+    .image-intro-content {
+        width: 10vw;
+        height: 10vw;
+    }
+    .letter-intro-content {
+        display: none;
+    }
+    .content-1 {
+        margin-bottom: 10vh;
+    }
+    .services-content-card-text {
+        display: none;
+    }
+    .services-content-btn {
+        bottom: 8vh;
+    }
+    .about-description {
+        background-image: url('/images/Group\ 122.png');
+    }
+    .project-description {
+        display: block;
+    }
+    .project-card {
+        width: 100%;
+        margin: 8vh 0;
+    }
+    .project-parameter {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .services-content-btn {
+        font-size: 2vh;
+    }
+    .intro-content-row {
+        height: 120vh;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    .services-content-box {
+        flex-direction: column;
+    }
+    .services-content-card {
+        width: 100%;
+        margin: 0;
+    }
+    .intro-content-row {
+        margin-left: 3vh;
+        height: 65vh;
+    }
+    .intro-content-card {
+        margin: 4vh;
+    }
+    .image-intro-content {
+        width: 10vh;
+        height: 10vh;
+    }
+    .content-text {
+        display: none;
+    }
+    .management-content {
+        flex-direction: column;
+    }
+    .content-title {
+        margin-bottom: 3vh;
+    }
+}
