@@ -1,6 +1,7 @@
 :root {
   --primary-bg: #111111;
   --primary-text: #ffffff;
+  --secondary-bg: #D30D60;
   --secondary-text: #210060;
 }
 .App {
