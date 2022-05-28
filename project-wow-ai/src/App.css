@@ -1,0 +1,29 @@
+:root {
+  --primary-bg: #111111;
+  --primary-text: #ffffff;
+  --secondary-text: #210060;
+}
+.App {
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* ------------Style Bootstrap-------------- */
+.nav-item {
+  transition: all .3s ease;
+}
+.navbar-contai > .nav-item:hover {
+  transform: scale(1.05);
+}
+.nav-link, .nav-link:hover, .nav-link:active {
+  color: var(--primary-text);
+}
+.nav-link:focus {
+  color: var(--primary-text);
+}
+.dropdown-menu.show {
+  padding-right: 10px;
+}
