@@ -28,3 +28,50 @@
 .dropdown-menu.show {
   padding-right: 10px;
 }
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+  width: 8%;
+}
+.carousel-control-prev {
+  right: 20vh;
+  left: auto;
+}
+.carousel-control-next {
+  right: 10vh;
+}
+
+/* Slide Home */
+.carousel-indicators [data-bs-target] {
+  opacity: 1;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px 0 10px;
+}
+.carousel-indicators .active {
+  background-color: var(--secondary-bg);
+}
+.carousel-caption {
+  text-align: right;
+  right: 10%;
+  left: 10%;
+  bottom: 0.25rem;
+}
+.slide-image {
+  height: 85vh;
+  object-fit: cover;
+}
+
+/* title */
+.title-content {
+  font-size: 57px !important;
+  font-weight: 600 !important;
+  padding: 4vh 0 4vh 0;
+  color: var(--secondary-bg);
+}
+.title-description {
+  font-size: 26px !important;
+  font-weight: 500 !important;
+  padding: 2vh 0 2vh 0;
+  color: var(--primary-text);
+}
