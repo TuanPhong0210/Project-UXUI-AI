@@ -12,7 +12,6 @@ const LinkStyled = styled(Link)({
   fontWeight: "400",
   transition: "all .3s ease",
   margin: "0 2vh 0 2vh",
-
   "&:hover": {
     color: "var(--primary-text)",
     transform: "scale(1.05)",
@@ -25,7 +24,6 @@ const ItemLink = styled(Link)({
   fontSize: "16px",
   fontWeight: "400",
   whiteSpace: "nowrap",
-
   "&:hover": {
     color: "var(--secondary-text)",
     fontWeight: "500",
@@ -37,6 +35,7 @@ const NavDropdownStyled = styled(NavDropdown)({
   textDecoration: "none",
   fontSize: "16px",
   fontWeight: "400",
+  zIndex: "100",
   "&:hover": {
     color: "white",
   }
@@ -48,6 +47,7 @@ const liStyled = {
 
 const CardMediaStyled = styled(CardMedia)({
   transition: "all .3s ease",
+  cursor: "pointer",
   "&:hover": {
     transform: "scale(1.05)",
   }
@@ -67,9 +67,9 @@ const LinkInfo = {
 const Header = () => {
   return (
     <div style={{ backgroundColor: "var(--primary-bg)", paddingBottom: "2vh" }}>
-      <Container className='header-info' style={{ display: "flex", justifyContent: "space-between", width: "90%" }}>
+      <Container className='header-info' style={{ display: "flex", justifyContent: "space-between", width: "1330px" }}>
         <NavDropdown title="English">
-          <ul>
+          <ul style={{marginBottom: "0"}}>
             <li style={{ textDecoration: "none" }}>
               <ItemLink to="/">English</ItemLink>
             </li>
@@ -112,7 +112,7 @@ const Header = () => {
 
             </Nav>
             <NavDropdownStyled title="Services" id="basic-nav-dropdown">
-              <ul>
+              <ul style={{marginBottom: "0"}}>
                 <li style={liStyled}>
                   <ItemLink to="/data-transcription">
                     Data Transcription
@@ -137,7 +137,7 @@ const Header = () => {
               Resources
             </LinkStyled>
             <NavDropdownStyled title="Company" id="basic-nav-dropdown">
-              <ul>
+              <ul style={{marginBottom: "0"}}>
                 <li>
                   <ItemLink to="/about-us">
                     About Us

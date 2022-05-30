@@ -4,8 +4,8 @@ import { Col, Row } from 'react-bootstrap'
 
 const AboutUs = () => {
     return (
-        <div style={{ background: "var(--primary-bg)" }}>
-            <Container style={{ width: "90%", padding: "10vh auto 10vh auto" }}>
+        <div id='aboutus' style={{height: "90vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <Container style={{ width: "90%", padding: "10vh 0"}}>
                 <Row>
                     <Col xs={7}>
                         <iframe
