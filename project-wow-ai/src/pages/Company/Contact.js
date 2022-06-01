@@ -1,8 +1,11 @@
 import React from 'react'
+import Dataset from '../../components/public/Dataset'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+      <Dataset/>
+    </div>
   )
 }
 

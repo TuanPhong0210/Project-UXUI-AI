@@ -1,7 +1,7 @@
 import React from 'react'
-import Dataset from '../../components/Services/Dataset'
+import Dataset from '../../components/public/Dataset'
 import Download from '../../components/Services/Download'
-import HignQuality from '../../components/Services/HignQuality'
+import HignQuality from '../../components/Services/public-service/HignQuality'
 import TransServices from '../../components/Services/TransServices'
 import topicservices from '../../__mock__/topicservices'
 

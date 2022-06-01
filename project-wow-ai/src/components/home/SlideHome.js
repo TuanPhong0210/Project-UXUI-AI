@@ -21,10 +21,10 @@ const SlideHome = () => {
     return (
         <div className="slide-container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <div class="carousel-indicators" style={{"&:active": {backgroundColor: "var(--secondary-bg)"}}}>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="btn-slide-home active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="btn-slide-home" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="btn-slide-home" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -58,10 +58,10 @@ const SlideHome = () => {
                             fontWeight: "600",
                             paddingBottom: "30px"
                         }}>
-                            A trusted partner that provides high-quality data <br/> solutions for AI training at a large scale. 
+                            A trusted partner that provides high-quality data <br /> solutions for AI training at a large scale.
                         </h5>
                         <a className='btn btn-light' href='/'>Contact Us</a>
-                        
+
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
