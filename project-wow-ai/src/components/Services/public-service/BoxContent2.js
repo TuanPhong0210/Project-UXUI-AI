@@ -15,7 +15,7 @@ const BoxStyled = styled(Box)({
 const TitleStyled = {
     fontSize: "32px",
     fontWeight: "700",
-    padding: "2vh 0",
+    padding: "1vh 0",
 }
 
 const BoxContent2 = ({ content }) => {
