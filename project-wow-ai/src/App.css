@@ -6,6 +6,10 @@
   color: #61dafb;
 }
 
+.container {
+  max-width: 1330px;
+}
+
 /* ------------Style Bootstrap-------------- */
 .nav-item {
   transition: all .3s ease;
@@ -129,25 +133,68 @@
   text-decoration: none;
   border-radius: 50px;
 }
+
 .btn-dark {
   padding: 1.2vh 4vh;
   border: 2px solid var(--secondary-bg);
   color: var(--secondary-bg);
   background-color: var(--primary-bg);
 }
+
 .btn-dark:hover {
   color: var(--primary-text);
   background-color: var(--secondary-bg);
 }
+
 .btn-light {
   padding: 0.5vh 10vh;
   color: var(--primary-bg);
   background-color: var(--primary-text);
 }
+
 .btn-light:hover {
   color: var(--primary-bg);
   background-color: var(--primary-text);
 }
+
+.btn-control {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-size: 20px;
+  border: 2px solid var(--secondary-bg);
+  border-radius: 15px;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  transition: all .5s ease;
+  margin: 0 1rem;
+}
+
+.btn-control:hover {
+  color: var(--primary-text);
+  border-color: var(--secondary-text);
+  background-color: var(--secondary-text);
+}
+
+.btn-control:active {
+  color: var(--primary-text);
+  border-color: var(--secondary-text);
+  background-color: var(--secondary-text);
+}
+
+.btn-pagination {
+  color: #B8B8B8;
+  padding: 1rem;
+  margin: 0 1rem;
+  font-size: 24px;
+  /* border: none; */
+  text-decoration: none;
+  transition: all .3s ease;
+}
+
+.btn-pagination:hover {
+  color: var(--primary-text);
+}
+
 .arrowdown {
   background: var(--primary-bg);
   width: 100%;
@@ -156,6 +203,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .form-control {
   color: var(--primary-text);
   background-color: var(--primary-bg);
@@ -165,6 +213,7 @@
   font-size: 18px;
   font-weight: 500;
 }
+
 .form-control:focus {
   color: var(--primary-text);
   background-color: var(--primary-bg);
@@ -172,3 +221,14 @@
   box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
 }
 
+@media only screen and (max-width: 1441px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 1301px) {
+  .container {
+    max-width: 1100px;
+  }
+}

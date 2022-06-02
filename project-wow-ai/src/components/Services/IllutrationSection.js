@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import BoxContent3 from './public-service/BoxContent3'
 import SlideContent from '../public/SlideContent'
 import TitleSection from './public-service/TitleSection'
@@ -7,7 +7,6 @@ import TitleSection from './public-service/TitleSection'
 const IllutrationSection = ({ content }) => {
   return (
     <div>
-      <Container>
         <TitleSection content={content} />
         <Row>
           <Col xs={9}>
@@ -19,7 +18,6 @@ const IllutrationSection = ({ content }) => {
             ))}
           </Col>
         </Row>
-      </Container>
     </div>
   )
 }

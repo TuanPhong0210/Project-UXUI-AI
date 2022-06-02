@@ -67,7 +67,7 @@ const LinkInfo = {
 const Header = () => {
   return (
     <div style={{ backgroundColor: "var(--primary-bg)", paddingBottom: "2vh" }}>
-      <Container className='header-info' style={{ display: "flex", justifyContent: "space-between", width: "1330px" }}>
+      <Container className='header-info container' style={{ display: "flex", justifyContent: "space-between" }}>
         <NavDropdown title="English">
           <ul style={{marginBottom: "0"}}>
             <li style={{ textDecoration: "none" }}>

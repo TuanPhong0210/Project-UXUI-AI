@@ -1,6 +1,5 @@
 import { Box, styled } from '@mui/material'
 import React from 'react'
-import { Container } from 'react-bootstrap'
 
 const BoxStyled = styled(Box)({
     backgroundColor: "var(--secondary-text)",
@@ -20,32 +19,30 @@ const titleStyled = {
 
 const ProjectAI = () => {
     return (
-        <div>
-            <Container style={{ width: "1330px", padding: "10vh 0" }}>
-                <h2 className='title-content' style={{ textAlign: "center" }}>Jumpstart your AI projects <br /> with excellent-quality data </h2>
-                <div style={{ display: "flex", width: "100%", justifyContent: "space-between", margin: "2vh 0" }}>
-                    <BoxStyled>
-                        <div>
-                            <p style={titleStyled}>100,000</p> Global <br /> Freelancers
-                        </div>
-                    </BoxStyled>
-                    <BoxStyled>
-                        <div>
-                            <p style={titleStyled}>120+</p> Languages
-                        </div>
-                    </BoxStyled>
-                    <BoxStyled>
-                        <div>
-                            <p style={titleStyled}>247+</p> Support
-                        </div>
-                    </BoxStyled>
-                    <BoxStyled>
-                        <div>
-                            <p style={titleStyled}>100%</p> Customer <br /> Satisfation
-                        </div>
-                    </BoxStyled>
-                </div>
-            </Container>
+        <div style={{ padding: "10vh 0" }}>
+            <h2 className='title-content' style={{ textAlign: "center" }}>Jumpstart your AI projects <br /> with excellent-quality data </h2>
+            <div style={{ display: "flex", width: "100%", justifyContent: "space-between", margin: "2vh 0" }}>
+                <BoxStyled>
+                    <div>
+                        <p style={titleStyled}>100,000</p> Global <br /> Freelancers
+                    </div>
+                </BoxStyled>
+                <BoxStyled>
+                    <div>
+                        <p style={titleStyled}>120+</p> Languages
+                    </div>
+                </BoxStyled>
+                <BoxStyled>
+                    <div>
+                        <p style={titleStyled}>247+</p> Support
+                    </div>
+                </BoxStyled>
+                <BoxStyled>
+                    <div>
+                        <p style={titleStyled}>100%</p> Customer <br /> Satisfation
+                    </div>
+                </BoxStyled>
+            </div>
         </div>
     )
 }

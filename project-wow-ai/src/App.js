@@ -4,6 +4,7 @@ import Footer from './components/Layouts/Footer';
 import Header from './components/Layouts/Header';
 import AboutUs from './pages/Company/AboutUs';
 import Contact from './pages/Company/Contact';
+import DetailBlog from './pages/DetailBlog';
 import Home from './pages/Home';
 import JoinOurTalentPool from './pages/JoinOurTalentPool';
 import OffTheShelf from './pages/OffTheShelf';
@@ -27,6 +28,7 @@ function App() {
         <Route path='/join-our-talent-pool' element={<JoinOurTalentPool />} />
         <Route path='/about-us' element={<AboutUs />} />
         <Route path='/contact' element={<Contact />} />
+        <Route path='/detail-blog' element={<DetailBlog />} />
       </Routes>
 
       <Footer />

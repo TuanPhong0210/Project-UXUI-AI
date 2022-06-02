@@ -1,4 +1,4 @@
-import { Box, Container, Link, styled } from '@mui/material'
+import { Box, Link, styled } from '@mui/material'
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 
@@ -36,82 +36,80 @@ const LinkStyled = styled(Link)({
 
 const Services = () => {
     return (
-        <div style={{ paddingBottom: "10vh" }}>
-            <Container style={{ width: "1330px", padding: "10vh 0" }}>
-                <div className='title-content' style={{ textAlign: "center" }}>
-                    Services
-                </div>
-                <Row style={{ color: "var(--primary-text)" }}>
-                    <Col xs={6}>
-                        <BoxStyled>
-                            <img
-                                src='/images/Rectangle112.png'
-                                alt='Services'
-                                style={{
-                                    width: "99%",
-                                    borderRadius: "15px",
-                                }}
-                            />
+        <div style={{ padding: "10vh 0" }}>
+            <div className='title-content' style={{ textAlign: "center" }}>
+                Services
+            </div>
+            <Row style={{ color: "var(--primary-text)" }}>
+                <Col xs={6}>
+                    <BoxStyled>
+                        <img
+                            src='/images/Rectangle112.png'
+                            alt='Services'
+                            style={{
+                                width: "99%",
+                                borderRadius: "15px",
+                            }}
+                        />
+                    </BoxStyled>
+                </Col>
+                <Col xs={3}>
+                    <div style={flexBox}>
+                        <BoxStyled style={BoxContent}>
+                            <h2 className='title-description'>+ Data collection</h2>
+                            <ul>
+                                <li>Text data collection</li>
+                                <li>Image data collection</li>
+                                <li>Speech data collection</li>
+                                <li>Audio data collection</li>
+                            </ul>
+                            <LinkStyled>
+                                Discover now &nbsp;
+                                <img src='/images/Vector9.png' alt='...' />
+                            </LinkStyled>
                         </BoxStyled>
-                    </Col>
-                    <Col xs={3}>
-                        <div style={flexBox}>
-                            <BoxStyled style={BoxContent}>
-                                <h2 className='title-description'>+ Data collection</h2>
-                                <ul>
-                                    <li>Text data collection</li>
-                                    <li>Image data collection</li>
-                                    <li>Speech data collection</li>
-                                    <li>Audio data collection</li>
-                                </ul>
+                        <BoxStyled style={BoxContent}>
+                            <h2 className='title-description'>+ Transcription</h2>
+                            <ul>
+                                <li>Image Transcription</li>
+                                <li>Audio Transcription</li>
+                                <li>Tailor-made solution</li>
+                            </ul>
+                            <LinkStyled>
+                                Learn more &nbsp;
+                                <img src='/images/Vector9.png' alt='...' />
+                            </LinkStyled>
+                        </BoxStyled>
+                    </div>
+                </Col>
+                <Col xs={3}>
+                    <div style={flexBox}>
+                        <BoxStyled style={BoxContent}>
+                            <h2 className='title-description'>+ Data annotation</h2>
+                            <ul>
+                                <li>Text data annotation</li>
+                                <li>Image data annotation</li>
+                                <li>Speech data annotation</li>
+                                <li>Audio data annotation</li>
+                            </ul>
+                            <div style={{ display: "flex" }}>
                                 <LinkStyled>
-                                    Discover now &nbsp;
-                                    <img src='/images/Vector9.png' alt='...' />
+                                    Free <br /> Consultation &nbsp;
                                 </LinkStyled>
-                            </BoxStyled>
-                            <BoxStyled style={BoxContent}>
-                                <h2 className='title-description'>+ Transcription</h2>
-                                <ul>
-                                    <li>Image Transcription</li>
-                                    <li>Audio Transcription</li>
-                                    <li>Tailor-made solution</li>
-                                </ul>
-                                <LinkStyled>
-                                    Learn more &nbsp;
-                                    <img src='/images/Vector9.png' alt='...' />
-                                </LinkStyled>
-                            </BoxStyled>
-                        </div>
-                    </Col>
-                    <Col xs={3}>
-                        <div style={flexBox}>
-                            <BoxStyled style={BoxContent}>
-                                <h2 className='title-description'>+ Data annotation</h2>
-                                <ul>
-                                    <li>Text data annotation</li>
-                                    <li>Image data annotation</li>
-                                    <li>Speech data annotation</li>
-                                    <li>Audio data annotation</li>
-                                </ul>
-                                <div style={{display: "flex"}}>
-                                    <LinkStyled>
-                                        Free <br/> Consultation &nbsp;
-                                    </LinkStyled>
-                                    <img src='/images/Vector9.png' alt='...' style={{ marginTop: "20px", height: "20px"}} />
-                                </div>
+                                <img src='/images/Vector9.png' alt='...' style={{ marginTop: "20px", height: "20px" }} />
+                            </div>
 
-                            </BoxStyled>
-                            <BoxStyled style={BoxContent}>
-                                <h2 className='title-description'>+ Tailor-made solution ?</h2>
-                                <LinkStyled>
-                                    Share with us &nbsp;
-                                    <img src='/images/Vector9.png' alt='...' />
-                                </LinkStyled>
-                            </BoxStyled>
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+                        </BoxStyled>
+                        <BoxStyled style={BoxContent}>
+                            <h2 className='title-description'>+ Tailor-made solution ?</h2>
+                            <LinkStyled>
+                                Share with us &nbsp;
+                                <img src='/images/Vector9.png' alt='...' />
+                            </LinkStyled>
+                        </BoxStyled>
+                    </div>
+                </Col>
+            </Row>
         </div>
     )
 }

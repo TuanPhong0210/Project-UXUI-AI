@@ -18,9 +18,10 @@ const BulletPoint = {
 
 const Footer = () => {
   return (
-    <div style={{ backgroundColor: "var(--primary-bg)", color: "var(--primary-text)" }}>
+    <div style={{ backgroundColor: "var(--primary-bg)", color: "var(--primary-text)" }}
+    >
       <hr style={{ color: "white", height: "2px", margin: "0" }} />
-      <Container style={{ marginBottom: "5vh" }}>
+      <Container style={{ marginBottom: "5vh", maxWidth: '1330px' }}>
         <Row>
           <Col lg="4" md="12" style={{ paddingRight: "110px" }}>
             <Link to="/">

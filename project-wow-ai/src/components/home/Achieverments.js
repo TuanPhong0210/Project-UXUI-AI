@@ -1,7 +1,6 @@
 import { faCircleCheck } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
-import { Container } from 'react-bootstrap'
 
 const Content = {
     display: "flex",
@@ -24,58 +23,56 @@ const VerticalLine = {
 
 const Achieverments = () => {
     return (
-        <div style={{ padding: "10vh 0" }}>
-            <Container style={{ width: "1330px", padding: "10vh 0" }}>
-                <div style={Content}>
-                    <div>
-                        <h2 className='title-description'>1. Audio Transcription</h2>
-                        <div style={{display: "flex"}}>
-                            <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
-                            <span>14 000 audio hours <br /> in 14 languages</span>
-                        </div>
-                    </div>
-                    <div>
-                        <hr style={Line} />
-                    </div>
-                    <div>
-                        <h2 className='title-description'>2. Audio Recording</h2>
-                        <div style={{display: "flex"}}>
-                            <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
-                            <span>12 000 recording audio <br /> hours in 6 languages</span>
-                        </div>
+        <div style={{ padding: "20vh 0" }}>
+            <div style={Content}>
+                <div>
+                    <h2 className='title-description'>1. Audio Transcription</h2>
+                    <div style={{ display: "flex" }}>
+                        <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
+                        <span>14 000 audio hours <br /> in 14 languages</span>
                     </div>
                 </div>
-                <div className='content-center' style={Content}>
-                    <div style={VerticalLine}>
-                        
-                    </div>
-                    <div>
-                        <h2 className='title-content' style={{padding: "10rem 0"}}>Achieverments</h2>
-                    </div>
-                    <div style={VerticalLine}>
-                        
+                <div>
+                    <hr style={Line} />
+                </div>
+                <div>
+                    <h2 className='title-description'>2. Audio Recording</h2>
+                    <div style={{ display: "flex" }}>
+                        <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
+                        <span>12 000 recording audio <br /> hours in 6 languages</span>
                     </div>
                 </div>
-                <div style={Content}>
-                    <div>
-                        <h2 className='title-description'>4. Automotive Video <br/> Annotation</h2>
-                        <div style={{display: "flex"}}>
-                            <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
-                            <span>10 million frames</span>
-                        </div>
-                    </div>
-                    <div>
-                        <hr style={Line} />
-                    </div>
-                    <div>
-                        <h2 className='title-description'>3. Audio Annotation</h2>
-                        <div style={{display: "flex"}}>
-                            <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
-                            <span>12 000 recording audio <br /> hours in 6 languages</span>
-                        </div>
+            </div>
+            <div className='content-center' style={Content}>
+                <div style={VerticalLine}>
+
+                </div>
+                <div>
+                    <h2 className='title-content' style={{ padding: "10rem 0" }}>Achieverments</h2>
+                </div>
+                <div style={VerticalLine}>
+
+                </div>
+            </div>
+            <div style={Content}>
+                <div>
+                    <h2 className='title-description'>4. Automotive Video <br /> Annotation</h2>
+                    <div style={{ display: "flex" }}>
+                        <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
+                        <span>10 million frames</span>
                     </div>
                 </div>
-            </Container>
+                <div>
+                    <hr style={Line} />
+                </div>
+                <div>
+                    <h2 className='title-description'>3. Audio Annotation</h2>
+                    <div style={{ display: "flex" }}>
+                        <FontAwesomeIcon icon={faCircleCheck} style={Icon} />
+                        <span>12 000 recording audio <br /> hours in 6 languages</span>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
